@@ -18,8 +18,9 @@ Sheeba Manghat Narayanan - Artwork/
 │       one sub-folder per work (this is the clean, TEXT-FREE source).
 ├── 2 - Instagram Reels (captioned videos + frames)/
 │       the promo reels + a 'frames_*' folder of stills + a _CONTACTSHEET.jpg
-│       per video. NOTE: these videos have the artist's caption text baked in,
-│       so the frames are NOT text-free — use folder 1 for clean artwork.
+│       + each post's CAPTION.txt / caption.info.json (and a combined
+│       INSTAGRAM_CAPTIONS.md). NOTE: these videos have the artist's caption text
+│       baked in, so the frames are NOT text-free — use folder 1 for clean artwork.
 └── 3 - Extra Media (process videos & misc)/
         process / making-of clips and extra photos (Drive 'extra media' folder).
 ```
@@ -48,7 +49,10 @@ Sheeba Manghat Narayanan - Artwork/
 ## 2 — Instagram videos (reel ↔ work)
 
 Source account: **instagram.com/soulfulwallarts**. Each folder holds the .mp4,
-a `frames_*` folder of extracted stills, and a `_CONTACTSHEET.jpg` preview.
+a `frames_*` folder of extracted stills, a `_CONTACTSHEET.jpg` preview, plus the
+post's **`CAPTION.txt`** (the artist's caption text) and **`caption.info.json`**
+(full metadata: date, likes, hashtags). All captions are also collected in
+**`INSTAGRAM_CAPTIONS.md`** in this folder.
 
 | Folder | Reel/Post URL |
 |---|---|
