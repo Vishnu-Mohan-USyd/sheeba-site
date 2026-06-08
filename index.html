@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sheeba Manghat Narayanan — Glimpses of Kerala</title>
+<meta name="description" content="Glimpses of Kerala — original oil-on-canvas paintings by Kerala artist Sheeba Manghat Narayanan. Fishermen and waves, temple yards, bull races and quiet sunsets — each piece a single original, painted from a remembered moment." />
+<meta name="author" content="Sheeba Manghat Narayanan" />
+<meta name="keywords" content="Sheeba Manghat Narayanan, Glimpses of Kerala, Kerala paintings, oil on canvas, Indian artist, original paintings, Kerala art, soulfulwallarts" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#f3ede1" />
+<!-- Open Graph / social link previews. NOTE: og:url, og:image and the canonical
+     link below need your live, absolute https:// URL to work in shares (most
+     scrapers ignore relative paths) — uncomment and fill them in once deployed. -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Sheeba Manghat Narayanan" />
+<meta property="og:title" content="Sheeba Manghat Narayanan — Glimpses of Kerala" />
+<meta property="og:description" content="Original oil-on-canvas paintings of Kerala — each piece a single original, painted from a remembered moment." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Sheeba Manghat Narayanan — Glimpses of Kerala" />
+<meta name="twitter:description" content="Original oil-on-canvas paintings of Kerala — each piece a single original, painted from a remembered moment." />
+<!-- <link rel="canonical" href="https://YOUR-DOMAIN/" /> -->
+<!-- <meta property="og:url" content="https://YOUR-DOMAIN/" /> -->
+<!-- <meta property="og:image" content="https://YOUR-DOMAIN/art/survival.jpg" /> -->
+<!-- <meta name="twitter:image" content="https://YOUR-DOMAIN/art/survival.jpg" /> -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%23933a26'/><text x='50%25' y='53%25' font-family='Georgia,serif' font-style='italic' font-size='42' fill='%23f3ede1' text-anchor='middle' dominant-baseline='central'>S</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#f3ede1;
+    --paper-2:#ece3d2;
+    --ink:#241c14;
+    --ink-soft:#574a39;
+    --muted:#8c7c63;
+    --line:rgba(36,28,20,.16);
+    --accent:#933a26;       /* oxblood — from her frames */
+    --accent-soft:#b9573d;
+    --display:'Cormorant Garamond', Georgia, serif;
+    --body:'Spectral', Georgia, serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--body);font-weight:400;font-size:17px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{display:block;max-width:100%;}
+
+  .eyebrow{
+    font-family:var(--body);font-weight:400;font-size:11.5px;letter-spacing:.28em;
+    text-transform:uppercase;color:var(--accent);
+  }
+  .label{
+    font-family:var(--body);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);
+  }
+
+  /* paper grain */
+  body::before{
+    content:'';position:fixed;inset:0;pointer-events:none;z-index:999;opacity:.04;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' seed='7'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  /* ── NAV ───────────────────────────── */
+  .nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:20px 44px;
+    background:linear-gradient(to bottom, rgba(243,237,225,.94), rgba(243,237,225,.6) 70%, rgba(243,237,225,0));
+    backdrop-filter:blur(6px);
+    transition:padding .3s, background .3s;
+  }
+  .nav.shrink{padding:13px 44px;border-bottom:1px solid var(--line);background:rgba(243,237,225,.92);}
+  .brand{font-family:var(--display);font-size:23px;font-weight:600;letter-spacing:.01em;line-height:1;}
+  .brand .sub{display:block;font-family:var(--body);font-size:9.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);margin-top:3px;font-weight:400;}
+  .nav-links{display:flex;gap:30px;align-items:center;}
+  .nav-links a{font-family:var(--body);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);transition:color .2s;position:relative;}
+  .nav-links a::after{content:'';position:absolute;left:0;right:100%;bottom:-5px;height:1.5px;background:var(--accent);transition:right .28s;}
+  .nav-links a:hover{color:var(--accent);}
+  .nav-links a:hover::after,.nav-links a.active::after{right:0;}
+  .nav-ig{padding:7px 15px;border:1px solid var(--ink);border-radius:999px;}
+  .nav-ig:hover{background:var(--ink);color:var(--paper)!important;border-color:var(--ink);}
+  .nav-ig::after{display:none;}
+  .menu-btn{display:none;}
+
+  /* ── HERO ──────────────────────────── */
+  .hero{
+    min-height:100vh;display:grid;grid-template-columns:1fr 1.05fr;
+    gap:64px;align-items:center;padding:130px 44px 70px;max-width:1500px;margin:0 auto;
+  }
+  .hero-left{max-width:540px;}
+  .hero h1{
+    font-family:var(--display);font-weight:500;font-size:clamp(60px,7.4vw,118px);
+    line-height:.92;letter-spacing:-.02em;margin:18px 0 0;
+  }
+  .hero h1 .ln2{display:block;font-style:italic;font-weight:400;color:var(--accent);}
+  .hero .tag{
+    font-family:var(--display);font-size:clamp(20px,2.2vw,27px);font-style:italic;color:var(--ink-soft);
+    margin:26px 0 0;line-height:1.3;
+  }
+  .hero p.bio{margin:24px 0 0;font-size:16.5px;color:var(--ink-soft);max-width:440px;}
+  .hero-cta{display:flex;gap:16px;margin-top:34px;align-items:center;flex-wrap:wrap;}
+  .btn{
+    font-family:var(--body);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;
+    padding:13px 26px;border-radius:999px;border:1px solid var(--ink);cursor:pointer;transition:.22s;
+    display:inline-flex;align-items:center;gap:9px;background:none;color:var(--ink);
+  }
+  .btn-primary{background:var(--accent);border-color:var(--accent);color:#fbf4ea;}
+  .btn-primary:hover{background:var(--ink);border-color:var(--ink);}
+  .btn-ghost:hover{background:var(--ink);color:var(--paper);}
+
+  /* hero art stack */
+  .hero-art{position:relative;justify-self:end;width:100%;max-width:620px;aspect-ratio:4/3.05;}
+  .hero-frame{
+    position:absolute;inset:0;background:#2b211a;
+    padding:14px;border-radius:2px;
+    box-shadow:0 40px 90px -34px rgba(40,26,16,.6), 0 4px 14px rgba(40,26,16,.18);
+    transform:rotate(-1.2deg);
+  }
+  .hero-frame::after{content:'';position:absolute;inset:14px;border:1px solid rgba(255,255,255,.12);pointer-events:none;}
+  .hero-slide{position:absolute;inset:14px;overflow:hidden;background:#15110d;}
+  .hero-slide img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;opacity:0;transition:opacity 1.1s ease;}
+  .hero-slide img.on{opacity:1;}
+  .hero-cap{
+    position:absolute;left:8px;bottom:-30px;font-family:var(--body);font-size:12px;color:var(--muted);letter-spacing:.04em;
+  }
+  .hero-cap b{color:var(--ink-soft);font-weight:500;font-style:italic;font-family:var(--display);font-size:15px;}
+  .hero-badge{
+    position:absolute;right:-14px;top:-22px;z-index:3;width:104px;height:104px;border-radius:50%;
+    background:var(--accent);color:#f7ead9;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    transform:rotate(8deg);box-shadow:0 12px 30px -10px rgba(120,40,20,.7);text-align:center;
+  }
+  .hero-badge .s{font-family:var(--body);font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;opacity:.85;}
+  .hero-badge .b{font-family:var(--display);font-style:italic;font-size:21px;line-height:1;margin:3px 0;}
+
+  /* section frame */
+  section.block{padding:96px 44px;max-width:1500px;margin:0 auto;}
+  .head{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:46px;}
+  .head h2{font-family:var(--display);font-weight:500;font-size:clamp(38px,5vw,68px);line-height:1;letter-spacing:-.02em;margin:10px 0 0;}
+  .head h2 em{font-style:italic;color:var(--accent);}
+  .head .desc{font-family:var(--display);font-style:italic;font-size:19px;color:var(--ink-soft);max-width:330px;text-align:right;}
+  .rule{height:1px;background:var(--line);width:100%;}
+
+  /* ── GALLERY (immersive viewer) ────── */
+  #gallery{background:linear-gradient(180deg,var(--paper),var(--paper-2));}
+  .viewer{display:grid;grid-template-columns:1.55fr 1fr;gap:50px;align-items:center;}
+  .stage{
+    position:relative;background:
+      radial-gradient(120% 130% at 50% 18%, #efe6d4 0%, #e3d6bd 70%, #d8c8aa 100%);
+    border:1px solid var(--line);
+    height:min(70vh,620px);display:flex;align-items:center;justify-content:center;
+    padding:46px;overflow:hidden;
+  }
+  .stage::before{content:'';position:absolute;inset:0;box-shadow:inset 0 0 90px rgba(60,40,20,.16);pointer-events:none;}
+  .artwrap{position:relative;height:100%;width:100%;display:flex;align-items:center;justify-content:center;}
+  .artwrap img{
+    max-height:100%;max-width:100%;width:auto;height:auto;object-fit:contain;
+    background:#1c150f;padding:11px;
+    box-shadow:0 30px 60px -24px rgba(40,24,12,.7), 0 3px 10px rgba(40,24,12,.25);
+    transition:opacity .45s ease, transform .45s ease;
+  }
+  .artwrap img.fading{opacity:0;transform:scale(.985);}
+  .stage-nav{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;
+    background:rgba(247,240,228,.86);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;
+    cursor:pointer;z-index:4;transition:.2s;color:var(--ink);font-size:19px;backdrop-filter:blur(3px);}
+  .stage-nav:hover{background:var(--ink);color:var(--paper);}
+  .stage-nav.prev{left:16px;} .stage-nav.next{right:16px;}
+  .stage-count{position:absolute;left:18px;bottom:14px;font-family:var(--body);font-size:12px;letter-spacing:.14em;color:var(--ink-soft);z-index:4;}
+  .stage-count b{font-family:var(--display);font-style:italic;font-size:18px;color:var(--accent);}
+
+  .meta .kicker{margin-bottom:14px;}
+  .meta h3{font-family:var(--display);font-weight:500;font-size:clamp(34px,3.6vw,52px);font-style:italic;line-height:1;margin:0 0 8px;}
+  .meta .medium{font-size:13px;letter-spacing:.04em;color:var(--muted);margin-bottom:22px;}
+  .meta .story{font-size:17px;color:var(--ink-soft);line-height:1.62;border-left:2px solid var(--accent);padding-left:20px;margin:0 0 22px;font-style:italic;font-family:var(--display);font-size:20px;}
+  .meta .links{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+  .pill{font-family:var(--body);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px;border:1px solid var(--line);border-radius:999px;transition:.2s;cursor:pointer;}
+  .pill:hover{border-color:var(--ink);}
+  .pill.reel{border-color:var(--accent);color:var(--accent);}
+  .pill.reel:hover{background:var(--accent);color:#f7ead9;}
+
+  /* thumbnail rail */
+  .rail{display:flex;gap:12px;margin-top:42px;overflow-x:auto;padding-bottom:8px;scrollbar-width:none;}
+  .rail::-webkit-scrollbar{display:none;}
+  .thumb{flex:0 0 auto;width:104px;height:78px;background:#1c150f;padding:4px;cursor:pointer;position:relative;
+    filter:grayscale(.35) brightness(.92);opacity:.7;transition:.25s;outline:1px solid transparent;}
+  .thumb img{width:100%;height:100%;object-fit:cover;}
+  .thumb:hover{opacity:1;filter:none;}
+  .thumb.active{opacity:1;filter:none;outline:1px solid var(--accent);transform:translateY(-3px);}
+  .thumb.active::after{content:'';position:absolute;left:0;right:0;bottom:-8px;height:2px;background:var(--accent);}
+
+  /* ── VIDEO ─────────────────────────── */
+  .reels{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+  .reel-card{display:flex;flex-direction:column;gap:0;}
+  .reel-embed{position:relative;aspect-ratio:9/16;background:#15110d;overflow:hidden;
+    box-shadow:0 24px 50px -28px rgba(40,24,12,.6);border:1px solid var(--line);}
+  .reel-embed iframe{position:absolute;top:-1px;left:-1px;width:calc(100% + 2px);height:calc(100% + 2px);border:0;}
+  .reel-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+    background:#1c150f;color:#f0e4d3;cursor:pointer;}
+  .reel-fallback img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5;}
+  .reel-fallback .play{position:relative;width:54px;height:54px;border-radius:50%;border:1.5px solid #f0e4d3;display:flex;align-items:center;justify-content:center;}
+  .reel-meta{padding:13px 2px 0;}
+  .reel-meta .t{font-family:var(--display);font-style:italic;font-size:19px;line-height:1.1;}
+  .reel-meta .d{font-family:var(--body);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:3px;}
+
+  /* ── ABOUT ─────────────────────────── */
+  #about{background:var(--ink);color:#ede2d0;}
+  #about .head h2{color:#f3e9d8;}
+  #about .head h2 em{color:var(--accent-soft);}
+  #about .head .desc{color:#b6a487;}
+  #about .rule{background:rgba(255,255,255,.14);}
+  .about-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:64px;align-items:start;margin-top:6px;}
+  .about-portrait{position:relative;}
+  .about-portrait .pic{background:#0f0b08;padding:12px;box-shadow:0 30px 60px -30px rgba(0,0,0,.7);transform:rotate(-1.4deg);}
+  .about-portrait .pic img{width:100%;aspect-ratio:4/4.6;object-fit:cover;}
+  .about-portrait .cap{font-family:var(--display);font-style:italic;font-size:15px;color:#b6a487;margin-top:18px;text-align:center;}
+  .about-text p{font-size:18px;color:#ddd0bc;margin:0 0 20px;}
+  .about-text p.lead{font-family:var(--display);font-size:26px;font-style:italic;line-height:1.4;color:#f3e9d8;}
+  .about-text p em{color:var(--accent-soft);font-style:italic;}
+  .facts{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:34px;padding-top:30px;border-top:1px solid rgba(255,255,255,.14);}
+  .facts h4{font-family:var(--body);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#b6a487;margin:0 0 14px;font-weight:400;}
+  .facts ul{list-style:none;margin:0;padding:0;}
+  .facts li{padding:5px 0;color:#cdbfa9;font-size:15.5px;}
+  .facts li b{font-family:var(--display);font-style:italic;font-weight:500;color:#f3e9d8;font-size:17px;}
+
+  /* ── CONTACT ───────────────────────── */
+  #contact{text-align:center;padding:120px 44px 90px;}
+  #contact .eyebrow{margin-bottom:24px;}
+  #contact h2{font-family:var(--display);font-weight:500;font-size:clamp(44px,6.4vw,92px);line-height:.96;letter-spacing:-.02em;margin:0 0 18px;}
+  #contact h2 em{font-style:italic;color:var(--accent);}
+  #contact .sub{font-family:var(--display);font-style:italic;font-size:21px;color:var(--ink-soft);max-width:520px;margin:0 auto 40px;}
+  .contact-row{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;}
+  .handle{font-family:var(--display);font-size:30px;font-style:italic;color:var(--accent);border-bottom:1px solid var(--accent);padding-bottom:3px;}
+  .handle:hover{color:var(--ink);border-color:var(--ink);}
+  footer{padding:28px 44px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;}
+  footer .label{font-size:10.5px;}
+
+  /* reveal — content always visible; gentle one-shot fade-up via keyframe */
+  .reveal{opacity:1;transform:none;}
+  @media (prefers-reduced-motion: no-preference){
+    .reveal.anim{animation:revUp .7s ease both;}
+  }
+  @keyframes revUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}
+
+  @media (max-width:1080px){
+    .reels{grid-template-columns:repeat(2,1fr);}
+    .viewer{grid-template-columns:1fr;gap:34px;}
+    .stage{height:54vh;}
+  }
+  @media (max-width:820px){
+    .nav{padding:15px 22px;}
+    .nav.shrink{padding:11px 22px;}
+    .nav-links{position:fixed;inset:0 0 0 auto;width:74%;max-width:320px;background:var(--paper);flex-direction:column;
+      align-items:flex-start;justify-content:center;gap:30px;padding:40px;transform:translateX(100%);transition:transform .35s;box-shadow:-20px 0 60px rgba(0,0,0,.16);}
+    .nav-links.open{transform:none;}
+    .nav-links a{font-size:16px;}
+    .menu-btn{display:flex;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;z-index:120;padding:6px;}
+    .menu-btn span{width:24px;height:2px;background:var(--ink);transition:.3s;}
+    .menu-btn.x span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+    .menu-btn.x span:nth-child(2){opacity:0;}
+    .menu-btn.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+    .hero{grid-template-columns:1fr;gap:48px;padding:110px 22px 60px;}
+    .hero-art{justify-self:start;max-width:100%;}
+    section.block{padding:70px 22px;}
+    .head{flex-direction:column;align-items:flex-start;gap:10px;}
+    .head .desc{text-align:left;}
+    .about-grid{grid-template-columns:1fr;gap:40px;}
+    .facts{grid-template-columns:1fr;gap:26px;}
+  }
+  @media (max-width:560px){
+    .reels{grid-template-columns:1fr;}
+    .hero h1{font-size:clamp(54px,16vw,90px);}
+  }
+
+  /* ── PRESS & MEDIA ─────────────────── */
+  .press-quote{font-family:var(--display);font-style:italic;font-size:clamp(23px,3.1vw,40px);line-height:1.3;color:var(--ink);max-width:920px;margin:0 0 48px;padding-left:26px;border-left:3px solid var(--accent);}
+  .press-quote cite{display:block;font-size:15.5px;font-style:normal;color:var(--muted);margin-top:16px;letter-spacing:.02em;}
+  .press-quote cite em{font-style:italic;color:var(--accent);}
+  .press-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
+  .press-item{margin:0;}
+  .press-video{background:#15110d;border:1px solid var(--line);box-shadow:0 24px 50px -28px rgba(40,24,12,.6);}
+  .press-video video{width:100%;height:auto;display:block;background:#15110d;}
+  .press-clip{display:block;background:#fbf7ef;padding:12px;border:1px solid var(--line);box-shadow:0 24px 50px -30px rgba(40,24,12,.5);transition:transform .25s, box-shadow .25s;}
+  .press-clip:hover{transform:translateY(-3px);box-shadow:0 32px 60px -28px rgba(40,24,12,.6);}
+  .press-clip img{width:100%;height:auto;}
+  .press-item figcaption{font-family:var(--body);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:14px;line-height:1.5;}
+  .press-src{font-family:var(--display);font-style:italic;text-transform:none;font-size:16px;letter-spacing:0;color:var(--accent);}
+  @media (max-width:820px){ .press-grid{grid-template-columns:1fr;gap:30px;} }
+
+  /* a11y: visible keyboard focus + reset native <button>s used as controls */
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+  .stage-nav{font-family:inherit;padding:0;margin:0;appearance:none;line-height:1;}
+  .pill{background:none;color:inherit;appearance:none;}
+  .thumb{border:0;appearance:none;display:block;}
+  .reel-fallback{width:100%;border:0;font-family:inherit;appearance:none;text-align:center;}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Sheeba Manghat Narayanan",
+  "jobTitle":"Painter",
+  "nationality":"Indian",
+  "description":"Kerala painter working in oil on canvas. Creator of the ongoing series 'Glimpses of Kerala'.",
+  "knowsAbout":["Oil painting","Kerala art","Contemporary Indian art"],
+  "sameAs":["https://www.instagram.com/soulfulwallarts/"],
+  "address":{"@type":"PostalAddress","addressRegion":"Kerala","addressCountry":"IN"}
+}
+</script>
+</head>
+<body>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="#top" class="brand">Sheeba Manghat<span class="sub">Narayanan · Painter</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+  <div class="nav-links" id="navLinks">
+    <a href="#gallery">Gallery</a>
+    <a href="#video">Reels</a>
+    <a href="#about">About</a>
+    <a href="#press">Press</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.instagram.com/soulfulwallarts/" target="_blank" rel="noopener" class="nav-ig">@soulfulwallarts</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-left reveal">
+    <div class="eyebrow">Glimpses of Kerala — Original Paintings</div>
+    <h1>Sheeba<span class="ln2">Manghat</span></h1>
+    <p class="tag">Memory, painted from a scent, a silence,<br/>and the long Malabar coast.</p>
+    <p class="bio">A Kerala painter working in oil on canvas — fishermen and waves, temple yards and old green walls, bull races and quiet sunsets. Each piece is one original, painted from a remembered moment.</p>
+    <div class="hero-cta">
+      <a href="#gallery" class="btn btn-primary">View the gallery</a>
+      <a href="#video" class="btn btn-ghost">Watch the reels</a>
+    </div>
+  </div>
+
+  <div class="hero-art reveal">
+    <div class="hero-badge"><span class="s">Series</span><span class="b">Glimpses<br/>of Kerala</span><span class="s">est. 2010</span></div>
+    <div class="hero-frame">
+      <div class="hero-slide" id="heroSlide">
+        <img src="art/webp/kochi-catch.webp" class="on" alt="Kochi Catch — oil on canvas" decoding="async" fetchpriority="high" onerror="this.onerror=null;this.src='art/kochi-catch.jpg'" />
+        <img src="art/webp/survival.webp" alt="Survival — oil on canvas" decoding="async" onerror="this.onerror=null;this.src='art/survival.jpg'" />
+        <img src="art/webp/village-green.webp" alt="Village Competition — oil on canvas" decoding="async" onerror="this.onerror=null;this.src='art/village-green.jpg'" />
+        <img src="art/webp/nostalgia.webp" alt="Nostalgia — oil on canvas" decoding="async" onerror="this.onerror=null;this.src='art/nostalgia.jpg'" />
+      </div>
+    </div>
+    <div class="hero-cap"><b id="heroCapT">Kochi Catch</b> &nbsp;· oil on canvas</div>
+  </div>
+</header>
+
+<!-- GALLERY -->
+<section class="block" id="gallery">
+  <div class="head reveal">
+    <div>
+      <div class="eyebrow">01 — The Works</div>
+      <h2>The <em>Gallery</em></h2>
+    </div>
+    <p class="desc">Ten originals from the series. Step through them one at a time.</p>
+  </div>
+  <div class="rule reveal" style="margin-bottom:40px;"></div>
+
+  <div class="viewer reveal">
+    <div class="stage">
+      <button type="button" class="stage-nav prev" id="gPrev" aria-label="Previous painting">‹</button>
+      <div class="artwrap"><img id="gImg" src="art/webp/survival.webp" alt="Survival — oil on canvas" decoding="async" onerror="this.onerror=null;this.src='art/survival.jpg'" /></div>
+      <button type="button" class="stage-nav next" id="gNext" aria-label="Next painting">›</button>
+      <div class="stage-count"><b id="gNum">01</b> / 10</div>
+    </div>
+
+    <div class="meta">
+      <div class="eyebrow kicker" id="gSeries">Glimpses of Kerala</div>
+      <h3 id="gTitle">Survival</h3>
+      <div class="medium" id="gMedium">Oil on canvas</div>
+      <p class="story" id="gStory"></p>
+      <div class="links">
+        <button type="button" class="pill reel" id="gReel">▶ Watch the reel</button>
+        <a class="pill" href="https://www.instagram.com/soulfulwallarts/" target="_blank" rel="noopener">Enquire to purchase</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rail" id="rail"></div>
+</section>
+
+<!-- VIDEO -->
+<section class="block" id="video">
+  <div class="head reveal">
+    <div>
+      <div class="eyebrow">02 — In Motion</div>
+      <h2>The <em>Reels</em></h2>
+    </div>
+    <p class="desc">Each painting, filmed — with the story she wrote for it.</p>
+  </div>
+  <div class="rule reveal" style="margin-bottom:40px;"></div>
+  <div class="reels reveal" id="reels"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="block" id="about">
+  <div class="head reveal">
+    <div>
+      <div class="eyebrow">03 — The Artist</div>
+      <h2>About <em>Sheeba</em></h2>
+    </div>
+    <p class="desc">Painter of remembered places.</p>
+  </div>
+  <div class="rule reveal" style="margin-bottom:46px;"></div>
+
+  <div class="about-grid reveal">
+    <div class="about-portrait">
+      <div class="pic"><img src="art/webp/serenity-lotus.webp" alt="Serenity — oil on canvas by Sheeba Manghat Narayanan" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='art/serenity-lotus.jpg'" /></div>
+      <div class="cap">— from the studio, Kerala</div>
+    </div>
+    <div class="about-text">
+      <p class="lead">"This piece is part of my Glimpses of Kerala series — painted from a memory, a scent, a silence."</p>
+      <p>Sheeba Manghat Narayanan paints the Kerala she carries with her — the temple tree she sat under as a child holding her grandmother's hand, the fishermen who <em>row because they have to and love because they choose to</em>, the bull races where tradition runs through mud and becomes memory.</p>
+      <p>She works in oil on canvas, one original at a time. The paintings began as a single series, <em>Glimpses of Kerala</em>, and have grown into a quiet record of a coast, its mornings, and its people.</p>
+      <div class="facts">
+        <div>
+          <h4>Practice</h4>
+          <ul>
+            <li><b>Oil on canvas</b> — originals</li>
+            <li><b>Glimpses of Kerala</b> — ongoing series</li>
+            <li><b>Based in</b> Kerala, India</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Find her</h4>
+          <ul>
+            <li><b>Instagram</b> — @soulfulwallarts</li>
+            <li><b>Enquiries</b> — by DM</li>
+            <li><b>Each work</b> — one original, for sale</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRESS & MEDIA -->
+<section class="block" id="press">
+  <div class="head reveal">
+    <div>
+      <div class="eyebrow">04 — Press &amp; Media</div>
+      <h2>In the <em>Press</em></h2>
+    </div>
+    <p class="desc">Featured on television and in print.</p>
+  </div>
+  <div class="rule reveal" style="margin-bottom:40px;"></div>
+
+  <blockquote class="press-quote reveal">
+    “I felt the need to capture the scenes that were once common in Kerala for posterity.”
+    <cite>— Sheeba Manghat Narayanan, in <em>The Hindu</em></cite>
+  </blockquote>
+
+  <div class="press-grid reveal">
+    <figure class="press-item">
+      <div class="press-video">
+        <video controls playsinline preload="none" poster="press/artscape-poster.jpg">
+          <source src="press/artscape-2010.mp4" type="video/mp4" />
+          Your browser can’t play this video — <a href="press/artscape-2010.mp4">download the feature</a> instead.
+        </video>
+      </div>
+      <figcaption><span class="press-src">ARTSCAPE</span> — television feature on <em>Glimpses of Kerala</em>, 2010</figcaption>
+    </figure>
+    <figure class="press-item">
+      <a class="press-clip" href="press/hindu-article.jpg" target="_blank" rel="noopener" aria-label="Open the full profile from The Hindu">
+        <img src="press/hindu-article.webp" alt="The Hindu, Metro Plus — “Unseen scenes of Kerala”, a profile of Sheeba Manghat Narayanan" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='press/hindu-article.jpg'" />
+      </a>
+      <figcaption><span class="press-src">The Hindu</span> — Metro Plus · “Unseen scenes of Kerala”</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal">
+    <div class="eyebrow">05 — Get in touch</div>
+    <h2>Bring a <em>memory</em> home.</h2>
+    <p class="sub">Every painting is a single original. To enquire, commission, or just say the work stirred something — send a message.</p>
+    <div class="contact-row">
+      <a class="handle" href="https://www.instagram.com/soulfulwallarts/" target="_blank" rel="noopener">@soulfulwallarts</a>
+    </div>
+    <div class="hero-cta" style="justify-content:center;margin-top:30px;">
+      <a href="https://www.instagram.com/soulfulwallarts/" target="_blank" rel="noopener" class="btn btn-primary">Message on Instagram</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="label">© <span id="yr">2025</span> Sheeba Manghat Narayanan</span>
+  <span class="label">Glimpses of Kerala · Painted in Kerala, India</span>
+</footer>
+
+<script>
+// ── DATA ───────────────────────────────────────────────
+const WORKS = [
+  { id:'survival', title:'Survival', img:'art/survival.jpg', medium:'Oil on canvas',
+    story:'A song of survival. Of sweat, sun, and soaked prayers. Of people who row because they have to — and love because they choose to.',
+    reel:'DNBbna7zCIU' },
+  { id:'kochi', title:'Kochi Catch', img:'art/kochi-catch.jpg', medium:'Oil on canvas · Fort Kochi',
+    story:'When the nets rise and fall, the sea seems to breathe with them. Every line, every hue carries that rhythm — slow, ancient, full of peace.',
+    reel:'DRCUeM7k8Jz' },
+  { id:'malabaris', title:'Malabaris', img:'art/malabaris.jpg', medium:'Oil on canvas',
+    story:'Some mornings feel like time never moved. You can almost hear the chatter, smell the wet earth, see the light slipping through old green walls.',
+    reel:'DQoohu-k3H8' },
+  { id:'village-green', title:'Village Competition II', img:'art/village-green.jpg', medium:'Oil on canvas · the green race',
+    story:'This isn\u2019t just a race — it\u2019s a heartbeat on canvas. When tradition runs through mud, it becomes memory.',
+    reel:'DO_Li8Bkxdp' },
+  { id:'village-brown', title:'Village Competition III', img:'art/village-brown.jpg', medium:'Oil on canvas · the golden race',
+    story:'Artists see stories where others see storms. It came alive when I tried to capture the heartbeat between the splash, the soil, and the strength of the man behind it.',
+    reel:'DQCHjbHEaeI' },
+  { id:'sunset', title:'Sunset', img:'art/sunset.jpg', medium:'Oil on canvas',
+    story:'The painting you didn\u2019t plan becomes the one you can\u2019t stop looking at. Not all beautiful things are intentional — some are born from chaos, instinct, and a moment you almost gave up.',
+    reel:'DR877_gEds7' },
+  { id:'nostalgia', title:'Nostalgia', img:'art/nostalgia.jpg', medium:'Oil on canvas',
+    story:'The very tree that stood in the temple compound where I went almost every day, holding my grandmother\u2019s hand. It watched me grow. It still stands there today.',
+    reel:'DMasy40Tk7Q' },
+  { id:'elegant', title:'Elegant Stride', img:'art/elegant-stride.jpg', medium:'Oil on canvas',
+    story:'Dusk on the water, and a slow procession of birds against the gold — the quiet, unhurried walk of evening over a Kerala backwater.',
+    reel:null },
+  { id:'serenity', title:'Serenity', img:'art/serenity-lotus.jpg', medium:'Oil on canvas',
+    story:'A lone figure poles a boat through a field of lotus. Stillness, and the small labour of moving gently through something beautiful.',
+    reel:null },
+  { id:'thekkady', title:'Thekkady Treasure', img:'art/thekkady.jpg', medium:'Oil on canvas · Thekkady',
+    story:'A herd moves across the green hills of Thekkady — the wild, unhurried heart of the Kerala highlands, remembered in paint.',
+    reel:null },
+];
+const REELS = [
+  { id:'DNBbna7zCIU', title:'Survival', date:'Aug 2025', img:'art/survival.jpg' },
+  { id:'DRCUeM7k8Jz', title:'Kochi Catch', date:'Nov 2025', img:'art/kochi-catch.jpg' },
+  { id:'DQoohu-k3H8', title:'Malabaris', date:'Nov 2025', img:'art/malabaris.jpg' },
+  { id:'DO_Li8Bkxdp', title:'Village Competition II', date:'Sep 2025', img:'art/village-green.jpg' },
+  { id:'DQCHjbHEaeI', title:'Village Competition III', date:'Oct 2025', img:'art/village-brown.jpg' },
+  { id:'DR877_gEds7', title:'Sunset', date:'Dec 2025', img:'art/sunset.jpg' },
+  { id:'DMasy40Tk7Q', title:'Nostalgia', date:'Jul 2025', img:'art/nostalgia.jpg' },
+  { id:'DMVmv7JzKWW', title:'The Temple Yard', date:'2025', img:'art/nostalgia.jpg', isPost:true },
+];
+
+// Map an original art/<name>.jpg path to its WebP derivative (small .thumb for
+// the rail). The original JPG stays as an <img onerror> fallback for old browsers.
+const webpOf =p=>p.replace('art/','art/webp/').replace(/\.jpg$/,'.webp');
+const thumbOf=p=>p.replace('art/','art/webp/').replace(/\.jpg$/,'.thumb.webp');
+
+// ── GALLERY VIEWER ─────────────────────────────────────
+let gi = 0;
+const gImg=document.getElementById('gImg'), gTitle=document.getElementById('gTitle'),
+      gMedium=document.getElementById('gMedium'), gStory=document.getElementById('gStory'),
+      gNum=document.getElementById('gNum'), gReel=document.getElementById('gReel'),
+      rail=document.getElementById('rail');
+
+WORKS.forEach((w,i)=>{
+  const t=document.createElement('button');
+  t.type='button';
+  t.className='thumb'+(i===0?' active':'');
+  t.setAttribute('aria-label','Show '+w.title);
+  t.innerHTML=`<img src="${thumbOf(w.img)}" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='${w.img}'"/>`;
+  t.addEventListener('click',()=>show(i));
+  rail.appendChild(t);
+});
+const thumbs=[...rail.children];
+
+function show(i){
+  i=(i+WORKS.length)%WORKS.length; gi=i; const w=WORKS[i];
+  gImg.classList.add('fading');
+  setTimeout(()=>{
+    gImg.alt=w.title;
+    gImg.onload=()=>gImg.classList.remove('fading');
+    gImg.onerror=()=>{ gImg.onerror=null; gImg.src=w.img; }; // fall back to original JPG
+    gImg.src=webpOf(w.img);
+    gTitle.textContent=w.title; gMedium.textContent=w.medium; gStory.textContent='\u201C'+w.story+'\u201D';
+    gNum.textContent=String(i+1).padStart(2,'0');
+    gReel.style.display = w.reel ? '' : 'none';
+  },220);
+  thumbs.forEach((t,k)=>t.classList.toggle('active',k===i));
+  thumbs[i].scrollIntoView({block:'nearest',inline:'center'});
+}
+document.getElementById('gPrev').onclick=()=>show(gi-1);
+document.getElementById('gNext').onclick=()=>show(gi+1);
+gReel.onclick=()=>{
+  const w=WORKS[gi]; if(!w.reel) return;
+  document.getElementById('video').scrollIntoView({behavior:'smooth'});
+  setTimeout(()=>activateReel(w.reel),700);
+};
+window.addEventListener('keydown',e=>{
+  // Only step the gallery while it is actually on screen, and never while the
+  // user is typing in a field.
+  if(/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName||'')) return;
+  const r=document.getElementById('gallery').getBoundingClientRect();
+  if(r.bottom<0||r.top>innerHeight) return;
+  if(e.key==='ArrowLeft'){ show(gi-1); }
+  else if(e.key==='ArrowRight'){ show(gi+1); }
+});
+show(0);
+
+// ── REELS ──────────────────────────────────────────────
+const reelsEl=document.getElementById('reels');
+REELS.forEach(r=>{
+  const card=document.createElement('div'); card.className='reel-card';
+  const url='https://www.instagram.com/'+(r.isPost?'p':'reel')+'/'+r.id+'/';
+  card.innerHTML=`
+    <div class="reel-embed" data-id="${r.id}" data-post="${r.isPost?1:0}">
+      <button type="button" class="reel-fallback" aria-label="Play the ${r.title} reel">
+        <img src="${webpOf(r.img)}" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='${r.img}'"/>
+        <span class="play" aria-hidden="true">▶</span>
+        <span class="label" style="position:relative;color:#f0e4d3">Tap to play</span>
+      </button>
+    </div>
+    <div class="reel-meta">
+      <div class="t">${r.title}</div>
+      <div class="d">${r.date} · <a href="${url}" target="_blank" rel="noopener">View on Instagram ↗</a></div>
+    </div>`;
+  const embed=card.querySelector('.reel-embed');
+  card.querySelector('.reel-fallback').addEventListener('click',()=>activateReel(r.id,embed));
+  reelsEl.appendChild(card);
+});
+// Load the Instagram embed as an OVERLAY layer: the painting poster stays in the
+// DOM underneath, so a slow / blocked / unavailable embed can always be recovered
+// (and every card also carries a direct "View on Instagram" link in its caption).
+function activateReel(id,el){
+  el = el || reelsEl.querySelector(`.reel-embed[data-id="${id}"]`);
+  if(!el || el.dataset.loaded) return;
+  el.dataset.loaded='1';
+  const post = el.dataset.post==='1';
+  const src='https://www.instagram.com/'+(post?'p':'reel')+'/'+id+'/embed/';
+  const frame=document.createElement('iframe');
+  frame.src=src;
+  frame.title='Instagram '+(post?'post':'reel');
+  frame.loading='lazy';
+  frame.setAttribute('allowtransparency','true');
+  frame.setAttribute('scrolling','no');
+  frame.setAttribute('allow','encrypted-media');
+  // If the embed never loads (network blocked / rate-limited), peel it back off
+  // so the poster + "Tap to play" return and the card stays usable.
+  const restore=()=>{ if(el.dataset.loaded!=='1') return; frame.remove(); el.dataset.loaded=''; };
+  const timer=setTimeout(restore,8000);
+  frame.addEventListener('load',()=>clearTimeout(timer));
+  frame.addEventListener('error',()=>{ clearTimeout(timer); restore(); });
+  el.appendChild(frame);
+}
+
+// ── HERO ROTATE ────────────────────────────────────────
+const heroImgs=[...document.querySelectorAll('#heroSlide img')];
+const heroCaps=['Kochi Catch','Survival','Village Competition','Nostalgia'];
+let hi=0;
+// Respect prefers-reduced-motion: only auto-rotate the hero when motion is welcome.
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+  setInterval(()=>{
+    heroImgs[hi].classList.remove('on'); hi=(hi+1)%heroImgs.length; heroImgs[hi].classList.add('on');
+    document.getElementById('heroCapT').textContent=heroCaps[hi];
+  },4200);
+}
+
+// ── NAV ────────────────────────────────────────────────
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('shrink',scrollY>40),{passive:true});
+const menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks');
+const setMenu=open=>{
+  navLinks.classList.toggle('open',open);
+  menuBtn.classList.toggle('x',open);
+  menuBtn.setAttribute('aria-expanded',open?'true':'false');
+};
+menuBtn.onclick=()=>setMenu(!navLinks.classList.contains('open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+addEventListener('keydown',e=>{ if(e.key==='Escape') setMenu(false); });
+const secs=['gallery','video','about','press','contact'].map(id=>document.getElementById(id));
+const navAs=[...navLinks.querySelectorAll('a')].filter(a=>a.getAttribute('href').startsWith('#'));
+addEventListener('scroll',()=>{
+  const y=scrollY+120; let cur='';
+  secs.forEach(s=>{if(s&&s.offsetTop<=y)cur=s.id;});
+  navAs.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur));
+},{passive:true});
+
+// ── REVEAL ─────────────────────────────────────────────
+// Content is visible by default (CSS). We only ADD a fade-up animation to
+// below-the-fold blocks as they scroll into view — a no-op failure can never
+// hide anything.
+const revEls=[...document.querySelectorAll('.reveal')];
+const revScan=()=>{
+  const vh=innerHeight||540;
+  revEls.forEach(el=>{
+    if(el.dataset.shown)return;
+    const r=el.getBoundingClientRect();
+    if(r.top < vh*0.9 && r.bottom > 0){
+      el.dataset.shown='1';
+      if(r.top > vh*0.55) el.classList.add('anim'); // only animate clearly below-fold blocks
+    }
+  });
+};
+revScan();
+addEventListener('scroll',revScan,{passive:true});
+addEventListener('resize',revScan,{passive:true});
+
+// keep the footer copyright year current
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
